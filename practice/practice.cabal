@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 4f6ac4e47a47ec8bd051cd567e22a753587e75f5ef2c4677964fff999af5057e
+-- hash: 5e13fc5f4545d7ae629f00d2d30e9a5c8c2e1bd6d0458223d3fdaf5c2a87f137
 
 name:           practice
 version:        0.1.0.0
@@ -35,6 +35,7 @@ library
   build-depends:
       base >=4.7 && <5
     , containers >=0.6
+    , mtl >=2.2
   default-language: Haskell2010
 
 executable practice-exe
@@ -47,6 +48,7 @@ executable practice-exe
   build-depends:
       base >=4.7 && <5
     , containers >=0.6
+    , mtl >=2.2
     , practice
   default-language: Haskell2010
 
@@ -61,5 +63,6 @@ test-suite practice-test
   build-depends:
       base >=4.7 && <5
     , containers >=0.6
+    , mtl >=2.2
     , practice
   default-language: Haskell2010
