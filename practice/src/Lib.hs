@@ -41,7 +41,7 @@ parse file = do
     (teams_line:pizzas) <- lines <$> readFile file
     let teams = triplet $ map read $ tail $ words teams_line
     let parsePizza = Set.fromList . tail . words
-    let pizzaaas = zip (map parsePizza pizzas) [1..]
+    let pizzaaas = zip (map parsePizza pizzas) [0..]
     return (teams, pizzaaas)
 
 output :: [Output] -> IO ()
