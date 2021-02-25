@@ -7,5 +7,5 @@ zip out/source.zip src/* app/* stack.yaml package.yaml
 for file in $(ls input | grep "\.txt\$")
 do
     echo $file
-  ./haskcode-exe res/$file > out/$file
+  ./haskcode-exe input/$file > out/$file
 done
